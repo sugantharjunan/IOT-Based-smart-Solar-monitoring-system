@@ -1,0 +1,54 @@
+name: solar_monitor
+description: Solar Monitor IoT App
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.3.0
+  firebase_auth: ^5.1.4
+  firebase_database: ^11.1.4
+
+  # UI & Navigation
+  google_fonts: ^6.2.1
+  curved_navigation_bar: ^1.0.3
+
+  # Local storage
+  shared_preferences: ^2.3.1
+
+  # Date formatting
+  intl: ^0.19.0
+
+  # Animations
+  animate_do: ^3.3.2
+  lottie: ^3.1.2
+  # add this in pubspec.yaml under dependencies:
+  fl_chart: ^0.69.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/solar.jpg
+    - assets/logo/logo.png
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/logo.png"
+  adaptive_icon_background: "#1565C0"
+  adaptive_icon_foreground: "assets/logo/logo.png"
+  min_sdk_android: 21
